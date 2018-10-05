@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}{{ data.page.title }}{% endblock %}
+{% set items = data.pieces | sort(false, true, 'title')%}
+{% block main %}
+{{ super() }}
+
+<div class="pure-g width-narrow">
+  <div data-ec-tours-display class="pure-u-3-4 mobile-2">
+  <h1><a href="{{data.page._url}}">{{data.page.title}}</a></h1>
+  <h2>{{data.piece.title}}</h2>
+    {% if data.piece.yearBuilt %}
+      <p>Built: {{data.piece.yearBuilt | date('YYYY') }}</p>
+    {% endif %}
+    {% if data.piece.description %}
+      <p>{{data.piece.description }}</p>
+    {% endif %}
+    <iframe src="{{data.piece.url}}" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <div class="pure-u-1-4 mobile-1">
+      {{ apos.singleton(data.page, 'list', 'ec-tours', {
+        controls: {
+          movable: false,
+          removable: false,
+          position: 'bottom-right'
+        }
+    }) }}
+  </div>
+</div>
+{% endblock %}
+
+<style>
+.pure-g {
+  display: -webkit-box;   
+    display: -moz-box;      
+    display: -ms-flexbox;   
+    display: -webkit-flex;  
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+}
+</style>

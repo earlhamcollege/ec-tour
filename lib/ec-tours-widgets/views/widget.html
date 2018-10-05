@@ -1,0 +1,6 @@
+<input type="text" name="buildingSearch" id="buildingSearch" placeholder="Search" />
+<ul data-ec-tour-list>
+{% for piece in data.widget._pieces %}
+  <li><a href="{{piece._url}}"><span class="hidden">{{piece.tags}}</span>{{ piece.title | title}}</a></li>
+{% endfor %}
+</ul>
