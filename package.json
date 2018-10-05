@@ -1,0 +1,28 @@
+{
+  "name": "ec-tour",
+  "version": "1.0.1",
+  "description": "Campus Tour for Apostrophe CMS",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earlhamcollege/ec-tour.git"
+  },
+  "keywords": [
+    "apostrophe-cms",
+    "apostrophe",
+    "campus",
+    "tour"
+  ],
+  "author": "Brad Wood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earlhamcollege/ec-tour/issues"
+  },
+  "homepage": "https://github.com/earlhamcollege/ec-tour#readme"
+}
