@@ -6,15 +6,12 @@
 
 <div data-ec-tours class="pure-g width-narrow ec-tours">
   
-  <div data-ec-tours-display class="pure-u-1 pure-u-md-3-4">
+  <div data-ec-tours-display class="pure-u-1 pure-u-md-3-4 mobile2">
   	<a href="{{data.page._url}}"><h1 class="page-title">{{data.page.title}}</h1></a>
     <iframe src="{{items[0].url}}" style="padding-right: 1em" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
-
-
-
-  <div data-apos-ajax-append class="pure-u-1 pure-u-md-1-4">
+  <div data-apos-ajax-append class="pure-u-1 pure-u-md-1-4 mobile1">
     <div data-ec-tours-list>
     	{{ apos.singleton(data.page, 'list', 'ec-tour', {
         controls: {
