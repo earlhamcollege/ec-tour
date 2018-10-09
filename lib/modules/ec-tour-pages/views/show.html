@@ -14,7 +14,7 @@
     {% if data.piece.description %}
       <p>{{data.piece.description }}</p>
     {% endif %}
-    <iframe src="{{data.piece.url}}" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    {{ apos.singleton(data.page, 'gallery', 'ec-gallery', {}) }}
   </div>
 
   <div class="pure-u-1-4 mobile-1">

@@ -1,6 +1,6 @@
 {
   "name": "ec-tour",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Campus Tour for Apostrophe CMS",
   "main": "index.js",
   "directories": {
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/earlhamcollege/ec-tour/issues"
   },
-  "homepage": "https://github.com/earlhamcollege/ec-tour#readme"
+  "homepage": "https://github.com/earlhamcollege/ec-tour#readme",
+  "dependencies": {
+    "ec-gallery-widgets": "^1.0.1"
+  }
 }
