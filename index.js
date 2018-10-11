@@ -11,30 +11,30 @@ module.exports = {
   },
    beforeConstruct: function(self, options) {
     options.addFields = [
-      	{
-   		name: 'title',
-   		type: 'string',
-   		label: 'Title'
-   	},
-   	{
-   		name: 'description',
-   		type: 'string',
-   		textarea: true,
-   		label: 'Description'
-   	},
-    {
+        {
+      name: 'title',
       type: 'string',
-      name: 'url',
+      label: 'Title'
+    },
+    {
+      name: 'description',
+      type: 'string',
       textarea: true,
-      label: 'Streeview Map Embed Code'
+      label: 'Description'
     },
     {
       type: 'date',
       name: 'yearBuilt',
       label: 'Year Built',
       pikadayOptions: {
-    	format: 'DD/MM/YYYY'
-  	  }
+      format: 'DD/MM/YYYY'
+      }
+    },
+    {
+      name: 'gallery',
+      label: 'Gallery',
+      type: 'singleton',
+      widgetType: 'ec-gallery'
     }
     ].concat(options.addFields || []);
 
@@ -43,6 +43,11 @@ module.exports = {
         name: 'info',
         label: 'Building Information',
         fields: [ 'yearBuilt','description' ]
+      },
+      {
+        name: 'gallery',
+        label: 'Gallery',
+        fields: [ 'gallery' ]
       }
     ].concat(options.arrangeFields || []);
   },

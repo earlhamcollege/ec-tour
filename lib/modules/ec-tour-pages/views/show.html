@@ -14,7 +14,7 @@
     {% if data.piece.description %}
       <p>{{data.piece.description }}</p>
     {% endif %}
-    {{ apos.singleton(data.page, 'gallery', 'ec-gallery', {}) }}
+        {{ apos.singleton(data.piece, 'gallery', 'ec-gallery', {}) }}
   </div>
 
   <div class="pure-u-1-4 mobile-1">
