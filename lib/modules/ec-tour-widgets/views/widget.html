@@ -1,4 +1,10 @@
-<input type="text" name="buildingSearch" id="buildingSearch" placeholder="Search" />
+<div data-ec-tour-search role="search">
+    <input id="buildingSearch" type="search" name="buildingSearch">
+    <button class="search-button">
+    	<i class="fa fa-close"></i>
+    </button>
+</div>
+
 <ul data-ec-tour-list>
 {% for piece in data.widget._pieces %}
   <li><a href="{{piece._url}}"><span class="hidden">{{piece.tags}}</span>{{ piece.title | title}}</a></li>
